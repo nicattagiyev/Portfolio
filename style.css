@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+nav .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav .navbar-list li{
+margin-right: 30px;
+cursor: pointer;
+
+}
+.mode li{
+    list-style: none;
+    cursor: pointer;
+
+}
+
+nav .navbar-list li a{
+    color: black;
+    text-decoration: none;
+}
+nav .navbar-list li a:hover{
+    color: #F70000;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+    transition: all 600ms;
+  }
+.dark-mode ul li a{
+color: white;
+transition: all 600ms;
+ }
+.profile{
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 90px 0px 90px;
+}
+.profile .name-job h2{
+    border-right: 1px solid;
+    overflow: hidden;
+    color: red;
+    font-weight: 960;
+    font-size: 50px;
+    animation:4s typing infinite;
+    white-space: nowrap;
+    margin-top: 20px;
+    font-weight: bolder;
+    padding-right: 30px;
+}
+@keyframes typing{
+0%{
+width: 10%;
+      
+}
+100%{
+width: 100%;
+
+}
+}
+
+.profile .name-job p{
+font-size: 60px;
+letter-spacing:1px;
+font-weight: bolder;
+}
+.profile  img{
+width: 45%;
+}
+.cv{
+margin-top: 8%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cv .btn{
+background-color: #5DADE2;
+color: white;
+border: none  !important;
+outline: none !important;
+cursor: pointer;
+padding: 10px 30px 10px 30px;
+border-radius: 5px;
+}
+.cv .btn:hover{
+background-color: #80bfe9;
+}
+.PROJECTS{
+padding: 0px 90px 0px 90px;
+margin-top: 8%;
+}
+.PROJECTS ul li{
+list-style: none;
+letter-spacing: 1px;
+font-weight: bolder;
+cursor: pointer;
+color: #F70000;
+font-size: 15px;
+}
+
+.cards{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 0px 90px 0px 90px;
+margin-top: 3%;
+overflow-y: hidden;
+}
+.cards .card-one{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+height: 50vh;
+width: 30%;
+cursor: pointer;
+transition: all 500ms;
+margin-top: 50px;
+overflow-x: hidden;
+}
+.cards .card-one .card-img{
+background-image: url("derick-david-paSLTZpHCdo-unsplash.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 50vh;
+width: 100%;
+position: absolute;
+  
+}
+.cards .card-one .card-img-one{
+    background-image: url("Screenshot\ \(7\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    width: 100%;
+    position: absolute;
+      
+    }
+    .cards .card-one .card-img-two{
+        background-image: url("todoimg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        width: 100%;
+        position: absolute;
+          
+        }
+.cards .card-one .btn{
+position: absolute;
+overflow: hidden;
+}
+
+.cards .card-one .btn button{
+cursor: pointer;
+padding: 8px 30px 8px 30px;
+border: none !important;
+outline: none !important;
+background-color: #fff;
+color: #343A40;
+border-radius: 5px;
+transition: all 500ms ;
+opacity: 0;
+transform: translateY(100px);
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-blur {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    opacity: 0;
+}
+.card-one:hover .card-blur {
+opacity: 0.6;
+transition: all 400ms ;
+}
+
+.cards .card-one:hover .btn button{
+opacity: 1;
+transform: translateY(0px);
+}
+
+.cards .card-one:hover{
+-ms-transform: scale(1, 1);
+-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+-o-transform: scale(1, 1); 
+transform: scale(1.03, 1.03);
+
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  flex-wrap: wrap;
+    padding: 30px 90px 50px 90px;
+    margin-top: 8%;
+border-top: 2px solid #EAEDED;
+
+}
+.skills .head {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+color: #CB4335;
+letter-spacing: 4px;
+font-size: 20px;
+
+}
+
+.skills .skill{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.skills .skill .logo img{
+    width: 80%;
+    height: 10vh;
+    object-fit: cover;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px 20px 90px;
+    background-color: #1C2833;
+    margin-top: 5%;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+footer ul li a{
+    color: #4f5861;
+    font-size: 20px;
+}
+footer ul li a:hover{
+color: #BDC3C7;
+}
+footer .copyrigth{
+    color: white;
+    letter-spacing: 1px;
+    opacity: 30%;
+    font-size: 14px;
+}
+.burger-menu{
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+ 
+}
+.burger-menu .line1{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+}
+.burger-menu .line2{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-top: 5px;
+}
+.burger-menu .line3{
+    height: 3px;
+    width: 15px;
+    background-color: white;
+    margin-top: 5px;
+}
+#HOME{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1;
+   overflow-x: hidden;
+}
+#HOME a{
+    font-size:30px;
+}
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  flex-wrap: wrap;
+    padding: 50px 90px 0px 90px;
+    border-top: 2px solid #EAEDED;
+    margin-top: 20px;
+  
+}
+.aboutme .head{
+    width: 100%;
+   
+}
+.aboutme .head h2{
+    color: #CB4335;
+    letter-spacing: 1px;
+    font-size: 28px;
+}
+.aboutme .head p{
+    margin-top: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.aboutme .box{
+    width: 20%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.aboutme .box p{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 1024px){
+
+    .cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      flex-wrap: wrap;
+        padding: 0px;
+        }
+    .cards .card-one{
+        width: 80%;
+    }
+    .skills{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin-top: 20%;
+}
+.skills .head{
+text-align: center;
+   }         
+.skills .skill{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 50px;}
+ .profile{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+ .profile  img{
+margin-top: 5%;
+width: 60%;
+    }      
+.aboutme .head{
+        text-align: center;
+    }     
+} 
+@media only screen and (max-width: 1000px) {
+body{overflow-x: hidden;}
+
+nav .navbar-list{
+display: flex;
+flex-direction: column;
+position: absolute;
+background-color: #121212;
+width: 100%;
+height: 30vh;
+color: white;
+right: 0px;
+top: 10px;
+z-index: 1;
+transform: translateY(-160%);
+margin-top: 50px;
+overflow-y: hidden;
+transition: all 500ms;
+}
+nav .navbar-list li{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 10px;
+margin-right: 0px;
+}
+
+nav{
+    background-color: #121212;
+    transition: all 500ms;
+}
+.burger-menu{
+display: flex;
+position: absolute;
+align-items: center;
+justify-content: center;
+right: 20px;
+font-size: 30px;
+color: white;
+cursor: pointer;
+
+}
+nav .show-menu{
+display: flex;
+transform: translateY(10%);
+
+}
+nav .navbar-list li a{
+color: white;
+}
+.mode{
+display: flex;
+align-items: center;
+position:absolute;
+left: 20px;
+font-size: 20px;
+cursor: pointer;
+
+}
+.mode li{
+    list-style: none;
+    
+}
+.mode li i{
+    color: white;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile .name-job{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profile .name-job h2{
+    font-size: 20px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.profile .name-job p{
+font-size: 35px;
+text-align:  center;
+margin-top: 20px;
+}
+
+.profile  img{
+    margin-top: 5%;
+  width: 70%;
+   }  
+.cv{
+    text-align: center;
+margin-top: 20%;}
+.PROJECTS{
+    padding: 0px;
+    margin-top: 20%;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0px;
+    }
+.cards .card-one{
+    width: 35%;
+}
+.skills{
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+padding: 0px;
+margin-top: 20%;
+    }
+.skills .head{
+text-align: center;
+}
+    
+.skills .skill{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;}
+    
+.skills .skill .logo img{
+        width: 80%;
+        height: 10vh;
+        object-fit: cover;}
+
+  
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+    width: auto;
+  
+}
+.aboutme .head{
+    text-align: center;
+}
+.aboutme .box{
+    width: 50%;
+    margin-top: 50px;
+    flex-direction: column;
+}
+  
+    
+@media only screen and (max-width: 768px) {
+.cards{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0px;
+}
+.cards .card-one{
+height: 50vh;
+width: 80%;
+            
+}
+.skills{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction:column ;
+padding: 0px;
+margin-top: 20%;
+}
+    
+.skills .skill{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    
+    }
+    .skills .head{
+        text-align: center;
+    }
+    .skills .skill .logo img{
+        width: 80%;
+        height: 10vh;
+        object-fit: cover;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+        padding: 20px 0px 20px 0px;
+        background-color: #1C2833;
+        margin-top: 5%;
+    }
+footer ul{
+margin-top: 20px;}
+
+.profile  img{
+display: none;
+} 
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+    border-top: 2px solid #EAEDED;
+    margin-top: 20px;
+  
+}
+.aboutme .mail{
+    width: 60%;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+   
+@media only screen and (max-width:412px){
+.cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0px;
+        }
+        .cards .card-one{
+        height: 50vh;
+        width: 90%;
+                    
+        }
+        .profile{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            text-align: center;
+        padding: 0px;
+        }
+        
+        .profile .name-job{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .profile .name-job h2{
+            font-size: 20px;
+            text-align: center;
+            padding-right: 5px;
+        }
+        
+        .profile .name-job p{
+        font-size: 35px;
+        text-align:  center;
+        margin-top: 20px;
+        }
+
+
+    }
+
+}
+
+}
